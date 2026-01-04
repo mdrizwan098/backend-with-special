@@ -1,0 +1,18 @@
+{
+  "name": "my-backend-coding",
+  "version": "1.0.0",
+  "description": "my first backend setup with chai aur code",
+  "keywords": [
+    "my",
+    "first",
+    "backend",
+    "project"
+  ],
+  "license": "ISC",
+  "author": "md Rijwan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
