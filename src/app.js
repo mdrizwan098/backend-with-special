@@ -13,7 +13,7 @@ app.use(cors({
 }))
 
 app.use(express.json({ limit: "17kb" }))
-app.use(express.ulsencoded({ exteded: true, limit: "16kb" }))
+app.use(express.urlencoded({ extended: true, limit: "16kb" }))
 
 app.use(express.static("public"))
 app.use(cookieParser())
@@ -21,10 +21,10 @@ app.use(cookieParser())
 
 //routes import
 
-import useRouter from './routes/user.routes.js'
+import userRouter from './routes/user.routes.js'
 
 //routes declarattion
-app.use("/api/v1/users", useRouter)
+app.use("/api/v1/users", userRouter)
 
 // http://localhost:8000/api/v1/users/register 
 
