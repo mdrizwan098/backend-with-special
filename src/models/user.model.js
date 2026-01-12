@@ -24,7 +24,7 @@ const userSchema = new Schema(
             trim: true
 
         },
-        FullName: {
+        fullName: {
             type: String,
             required: true,
             trim: true,
@@ -85,7 +85,7 @@ userSchema.methods.generateRefreshToken = function () {
             _id:this._id,
             
         },
-        process.env.REFRESS_TOKEN_SECRET,
+        process.env.REFRESH_TOKEN_SECRET,
         {
 expiresIn:process.env.REFRESS_TOKEN_EXPIRY
         }
